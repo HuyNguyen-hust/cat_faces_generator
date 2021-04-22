@@ -6,9 +6,9 @@ Data used was downloaded from [Animal Faces](https://www.kaggle.com/andrewmvd/an
 I only used cat data for this project
 
 # How to run
-Store all the cat images data to the folder cat  
+Store all the cat images data to the folder 'cat'  
 to train the model: python cat_gan.py  
-After each epoch it generates an image of cats and stores them into folder generated
+After each epoch it generates an image of cats and stores them into folder 'generated'
 
 # Some generated images
 20 epochs:
