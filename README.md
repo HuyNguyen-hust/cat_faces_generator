@@ -1,5 +1,5 @@
 # cat_faces_generator
-A project that learns how to generate cat face images
+A project that learns how to generate cat face images using DCGAN
 
 # Datasets
 Data used was downloaded from [Animal Faces](https://www.kaggle.com/andrewmvd/animal-faces)  
