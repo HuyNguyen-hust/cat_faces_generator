@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 import os
+from tqdm import tqdm
 
 import torch
 from torch.utils.data import DataLoader
@@ -163,7 +164,7 @@ def fit(epochs, lr, start_idx=1):
     opt_g = torch.optim.Adam(generator.parameters(), lr = lr, betas = (0.5, 0.999))
     
     for epoch in range(epochs):
-        for real_images, _ in data_loader:
+        for real_images, _ in tqdm(data_loader):
             # Train discriminator
             loss_d, real_score, fake_score = train_discriminator(real_images, opt_d)
             # Train generator
